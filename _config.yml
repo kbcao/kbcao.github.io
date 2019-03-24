@@ -78,12 +78,12 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: next
 
-# CountWordsTime
+# PostWordCountAndTime
 symbols_count_time:
   symbols: true
   time: true
-  total_symbols: true
-  total_time: true
+  total_symbols: false
+  total_time: false
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
