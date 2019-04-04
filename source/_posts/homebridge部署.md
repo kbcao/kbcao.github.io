@@ -56,7 +56,7 @@ sudo cp -R * /usr/local/
 
 安装方法是先 wget，然后 `sudo dpkg -i xx.deb`
 
-![部署步骤](homebridge部署/15205633704502.png)
+![部署步骤](15205633704502.png)
 
 安装完成后还有两个因为更新了包需要更新的
 
