@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.0.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.0.1">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.0.1" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.0.1',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false,"dimmer":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="考研中文面试专业问题堆与栈区别栈是一个先进后出的数据结构，后进先出，一般由系统自动分配，存放存放函数的参数值，局部变量等，自动清除。每个函数进入的时候分一小块，函数返回的时候就释放了。存放的变量生命周期一旦结束就会被释放。变量有自己的作用域，一旦离开作用域，变量就会被释放。栈内存的更新速度很快，因为局部变量的生命周期都很短。 堆是一个可动态申请的内存空间，存放静态和全局变量，new 变量。存储的是">
+<meta property="og:type" content="article">
+<meta property="og:title" content="考研中文面试专业问题">
+<meta property="og:url" content="https://kaibo.me/post/7bd27561.html">
+<meta property="og:site_name" content="LonelyPointer">
+<meta property="og:description" content="考研中文面试专业问题堆与栈区别栈是一个先进后出的数据结构，后进先出，一般由系统自动分配，存放存放函数的参数值，局部变量等，自动清除。每个函数进入的时候分一小块，函数返回的时候就释放了。存放的变量生命周期一旦结束就会被释放。变量有自己的作用域，一旦离开作用域，变量就会被释放。栈内存的更新速度很快，因为局部变量的生命周期都很短。 堆是一个可动态申请的内存空间，存放静态和全局变量，new 变量。存储的是">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-04-04T03:38:51.441Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="考研中文面试专业问题">
+<meta name="twitter:description" content="考研中文面试专业问题堆与栈区别栈是一个先进后出的数据结构，后进先出，一般由系统自动分配，存放存放函数的参数值，局部变量等，自动清除。每个函数进入的时候分一小块，函数返回的时候就释放了。存放的变量生命周期一旦结束就会被释放。变量有自己的作用域，一旦离开作用域，变量就会被释放。栈内存的更新速度很快，因为局部变量的生命周期都很短。 堆是一个可动态申请的内存空间，存放静态和全局变量，new 变量。存储的是">
+
+
+
+
+
+
+  <link rel="canonical" href="https://kaibo.me/post/7bd27561.html">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>考研中文面试专业问题 | LonelyPointer</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">LonelyPointer</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://kaibo.me/post/7bd27561.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kaibo Cao">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LonelyPointer">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">考研中文面试专业问题
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-04-04 11:37:03 / Modified: 11:38:51" itemprop="dateCreated datePublished" datetime="2019-04-04T11:37:03+08:00">2019-04-04</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/exam/" itemprop="url" rel="index"><span itemprop="name">exam</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/exam/kaoyan/" itemprop="url" rel="index"><span itemprop="name">kaoyan</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">6.6k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">6 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="考研中文面试专业问题"><a href="#考研中文面试专业问题" class="headerlink" title="考研中文面试专业问题"></a>考研中文面试专业问题</h1><h2 id="堆与栈区别"><a href="#堆与栈区别" class="headerlink" title="堆与栈区别"></a>堆与栈区别</h2><p>栈是一个先进后出的数据结构，后进先出，一般由系统自动分配，存放存放函数的参数值，局部变量等，自动清除。每个函数进入的时候分一小块，函数返回的时候就释放了。存放的变量生命周期一旦结束就会被释放。变量有自己的作用域，一旦离开作用域，变量就会被释放。栈内存的更新速度很快，因为局部变量的生命周期都很短。</p>
+<p>堆是一个可动态申请的内存空间，存放静态和全局变量，new 变量。存储的是实体，实体用于封装数据，如果数据消失，这个实体没有消失，还可以用，堆不会随时释放的，堆里的实体虽然不会被释放，但是会被当成垃圾，Java有垃圾回收机制不定时的收取。所有使用new构造出来的对象都在堆中存储，其内存中的数据是无序的，释放时也可以没有先后顺序。</p>
+<h2 id="JAVA虚拟机"><a href="#JAVA虚拟机" class="headerlink" title="JAVA虚拟机"></a>JAVA虚拟机</h2><p>虚拟机是一种抽象化的计算机，通过在实际的计算机上仿真模拟各种计算机功能来实现的。Java虚拟机有自己完善的硬体架构，如处理器、堆栈、寄存器等，还具有相应的指令系统。JVM屏蔽了与具体操作系统平台相关的信息，使得Java程序只需生成在Java虚拟机上运行的目标代码（字节码），就可以在多种平台上不加修改地运行。</p>
+<p>解释字节码，跨平台，性能低</p>
+<h2 id="为什么B-树比B树更适合做系统的数据库索引和文件索引"><a href="#为什么B-树比B树更适合做系统的数据库索引和文件索引" class="headerlink" title="为什么B+树比B树更适合做系统的数据库索引和文件索引"></a>为什么B+树比B树更适合做系统的数据库索引和文件索引</h2><ol>
+<li><p>B+树的磁盘读写代价更低因为B+树内部结点没有指向关键字具体信息的指针，内部结点相对B树小</p>
+</li>
+<li><p>B+树的查询更加稳定因为非终端结点并不是指向文件内容的结点，仅仅是作为叶子结点的关键字索引，因此所有的关键字查询都会走一条从根节点到叶子结点的路径。即s所有关键字查询的长度是一样的，查询效率稳定。</p>
+</li>
+</ol>
+<h2 id="B树的作用"><a href="#B树的作用" class="headerlink" title="B树的作用"></a>B树的作用</h2><p>B树是一种查找树，目的都是为了解决某种系统中，查找效率低的问题。二叉查找树的特点是每个非叶节点都只有两个孩子节点。然而这种做法会导致当数据量非常大时，二叉查找树的深度过深，搜索算法自根节点向下搜索时，需要访问的节点也就变的相当多。随着树高度的增加，频繁的I/O操作一定会降低查询的效率。对于外存储器的信息读取最大的时间消耗在于寻找磁盘页面。那么一个基本的想法就是能不能减少这种读取的次数，在一个磁盘页面上，多存储一些索引信息。B树的基本逻辑就是这个思路，它要改二叉为多叉，每个节点存储更多的指针信息，以降低I/O操作数。</p>
+<h2 id="B树和B-树区别"><a href="#B树和B-树区别" class="headerlink" title="B树和B+树区别"></a>B树和B+树区别</h2><ol>
+<li><p>B+树中只有叶子节点会带有指向记录的指针（ROWID），而B树则所有节点都带有，在内部节点出现的索引项不会再出现在叶子节点中。</p>
+</li>
+<li><p>B+树中所有叶子节点都是通过指针连接在一起，而B树不会。</p>
+</li>
+</ol>
+<h2 id="异常的作用"><a href="#异常的作用" class="headerlink" title="异常的作用"></a>异常的作用</h2><p>提高了程序的健壮性，更好的容错，更好的防止程序崩溃，易于调试。运行时异常一般是由程序逻辑错误引起的，程序应该从逻辑角度尽可能避免这类异常的发生。</p>
+<h2 id="OSI-TCP-IP"><a href="#OSI-TCP-IP" class="headerlink" title="OSI/TCP/IP"></a>OSI/TCP/IP</h2><p>OSI模型核心：</p>
+<p>服务：定义指明了该层该做什么，而不是上一层的实体如何访问这一层，或者这一层是如何工作的。</p>
+<p>接口：定义它上层的进程如何访问该层。</p>
+<p>协议：对等协议定义了它内部的事情。</p>
+<p>共同点：</p>
+<p>都以分层协议栈的概念为基础，协议栈中的协议彼此相互独立。</p>
+<p>传输层以及传输层以上的各层都为希望进行通信的进程提供了一种端到端的，与网络无关的服务。</p>
+<p>区别OSI模型有7层，TCP/IP只有4层。</p>
+<p>无连接的和面向对象的通信范围有所不同，OSI模型的网络层同时支持无连接的和面向连接的通信，但是传输层只支持面向连接的通信。TCP/IP模型的网络层上只有一种模式：无连接模式，但是在传输层上同时支持两种通信模式。</p>
+<p>OSI参考模型是在协议发明之前已经产生的，TCP/IP是在在协议出现之后出现的，而且它只是已有协议的一个描述而已。</p>
+<h2 id="什么是静态链表"><a href="#什么是静态链表" class="headerlink" title="什么是静态链表"></a>什么是静态链表</h2><p>对于没有指针的编程语言，可以用数组替代指针，来描述链表。让数组的每个元素由data和cur两部分组成，其中cur相当于链表的next指针，这种用数组描述的链表叫做静态链表，这种描述方法叫做游标实现法。</p>
+<h2 id="文件系统实现"><a href="#文件系统实现" class="headerlink" title="文件系统实现"></a>文件系统实现</h2><p>目录实现方法是使用存储文件名和数据块指针的线性表。创建新文件时，必须首先搜索目录表以确定没有同名的文件存在，然后在目录表后增加一个目录项。哈希表根据文件名得到一个值，并返回一个指向线性列表中元素的指针。</p>
+<p>文件分配对应于文件的物理结构，是指如何为文件分配磁盘块。常用的磁盘空间分配方式有三种：连续分配、链接分配和索引分配。</p>
+<h2 id="静态与动态区别"><a href="#静态与动态区别" class="headerlink" title="静态与动态区别"></a>静态与动态区别</h2><p>static全局变量与普通全局变量的区别</p>
+<p>这两者在存储方式上没有区别，是静态存储方式。</p>
+<p>区别在于</p>
+<p>非静态全局变量的作用域是整个源程序，当一个源程序是由多个源文件组成时，声明的非静态全局变量在每个源文件中都是有效的。</p>
+<p>而静态全局变量则限制了其作用域，只在其声明的源文件中有效，在同一源程序中不能使用它。</p>
+<p>局部变量与静态变量的区别</p>
+<ol>
+<li><p>存储位置</p>
+<p> 动态变量：存储在内存出栈数据区<br> 静态变量：存储在全局数据区（静态数据区）</p>
+</li>
+<li><p>生命期</p>
+<p> 动态变量：超出范围变量将失效<br> 静态变量：程序结束时才释放，静态变量只在程序中初始化一次，在调用时下一次依据上一次的值。</p>
+</li>
+<li><p>作用域</p>
+<p> 动态变量：超出范围变量将失效<br> 静态变量：当前文件中有效静态static函数与普通函数的区别static函数在内存中只存在一份，普通函数在每个被调用中维护一份复制品。</p>
+</li>
+</ol>
+<h2 id="强类型和弱类型的区别"><a href="#强类型和弱类型的区别" class="headerlink" title="强类型和弱类型的区别"></a>强类型和弱类型的区别</h2><p>强类型定义语言：强制数据类型定义的语言，一旦一个变量被指定了某个数据类型，如果不经过强制转换，那么它就永远是这个数据类型了。</p>
+<p>弱类型定义语言：数据类型可以被忽略的语言。它与强类型定义语言相反, 一个变量可以赋不同数据类型的值。</p>
+<h2 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h2><p>多态是同一操作作用于不同的对象，可以有不同的解释，产生不同的执行结果，这就是多态性。</p>
+<p>就是用基类的引用指向子类的对象。</p>
+<p>High cohesion low coupling</p>
+<p>为什么</p>
+<p>代码的复用，还可以解决项目中紧偶合的问题,提高程序的可扩展性，通过对系统的分析把他分解成一个一个子模块，子模块提供稳定的接口，达到降低系统耦合度的的目的，模块模块之间尽量使用模块接口访问，而不是随意引用其他模块的成员变量。</p>
+<p>好处</p>
+<p>应用程序不必为每一个派生类编写功能调用，只需要对抽象基类进行处理即可。大大提高程序的可复用性。</p>
+<p>派生类的功能可以被基类的方法或引用变量所调用，这叫向后兼容，可以提高可扩充性和可维护性。</p>
+<h2 id="异常和错误区别"><a href="#异常和错误区别" class="headerlink" title="异常和错误区别"></a>异常和错误区别</h2><p>异常：在Java中程序的错误主要是语法错误和语义错误，一个程序在编译和运行时出现的错误我们统一称之为异常，它是VM(虚拟机)通知你的一种方式，通过这种方式，VM让你知道，你(开发人员)已经犯了个错误，现在有一个机会来修改它。Java中使用异常类来表示异常，不同的异常类代表了不同的异常。但是在Java中所有的异常都有一个基类，叫做Exception。</p>
+<p>错误：它指的是一个合理的应用程序不能截获的严重的问题。大多数都是反常的情况。错误是VM的一个故障(虽然它可以是任何系统级的服务)。所以，错误是很难处理的，一般的开发人员是无法处理这些错误的。比如内存溢出;和异常一样，在Java中用错误类来表示错误，不同的错误类代表了不同的错误。在Java中所有的错误都有一个基类，叫做Error。</p>
+<p>综上，我们可以知道异常和错误最本质的区别就是异常能被开发人员处理而错误是系统本来自带的，一般无法处理也不需要我们程序员来处理。</p>
+<h2 id="软件工程定义"><a href="#软件工程定义" class="headerlink" title="软件工程定义"></a>软件工程定义</h2><p>研究以系统性的、规范化的、可定量的方法去开发运行和维护软件，也就是将工程运用到软件，和对各种方法的研究</p>
+<h2 id="软件的生命周期"><a href="#软件的生命周期" class="headerlink" title="软件的生命周期"></a>软件的生命周期</h2><p>需求分析、体系结构设计、详细设计、软件构造、软件测试、软件维护</p>
+<h2 id="谈谈对软件工程的理解"><a href="#谈谈对软件工程的理解" class="headerlink" title="谈谈对软件工程的理解"></a>谈谈对软件工程的理解</h2><p>软件工程就是按照工程学的管理方式，有组织、有计划的，在一定的质量基础、时间限度和成本范围内，实现功能明确的软件系统。软件的核心是人，这是软件工程与传统工程最大的不同，如果说软件的核心是机器，软件工程也不会是如此困难了，因为机器是可度量的，可操控的，就像流水线上的机器，你让它干一整天，它不会说生气不干了，并且每一台机器每天的产量是一样的。但是软件开发是一个创造性的过程，也只有人类拥有创造性思维。所以软件开发绝大部分是受到人为因素影响的，而世界上的每个人又不同，如何物色、管理、运用这些人？让他们发挥其最大的价值？</p>
+<p>软件是人类智慧创造的结晶，只可惜它不像传统工程显而易见，当你拿着手机在淘宝上购买商品时，你看到的只是软件UI交互部分，指引你发生购买行为，但是整个过程涉及到的技术以及代码量，你是无法想象到的，就算给你源码看，难度也堪比登天。这也就出现了让我们程序员啼笑皆非的提问“开发一个像淘宝一样的APP需要多少钱？也就是显示商品，然后点击购买。”这一时半会很真的很难评估……因为这里面涉及到太多东西了。所以软件评估量化真的很难，而且实现方法原理都有所不同，这也就说明了软件是高度复杂的。</p>
+<p>这也就牵扯到一个问题，软件开发过程中的程序员不能随意更换，否则重新理解阅读软件源码和学习开发框架是有成本风险的，这也是为什么软件工程需要制定规范，撰写文档等等。从某种意义上，软件工程更希望我们像一颗螺丝钉，坏了立马可以更换。</p>
+<p>任何新的技术和方法都不会无缘无故出现，都是为了更好的服务于某一种活动。我们熟知的面向对象，敏捷开发等各种方法，各种语言，各种框架，其实都是为了解决软件工程的难题。所以，有时候我们不必盲目崇拜新的技术和方法，这都需要我们进行评估，你不可能用node.js来写CPU密集型的程序吧？如果项目组没人会go语言，我看还是用熟悉的语言吧，不然学习成本和风险太大了。</p>
+<p>在给定成本、进度的前提下，开发出具有适用性、有效性、可修改性、可靠性、可理解性、可维护性、可重用性、可移植性、可追踪性、可互操作性和满足用户需求的软件产品。这才是我们需要思考的问题。</p>
+<h2 id="TCP三次握手、四次挥手"><a href="#TCP三次握手、四次挥手" class="headerlink" title="TCP三次握手、四次挥手"></a>TCP三次握手、四次挥手</h2><p>TCP服务器进程时刻准备接受客户进程的连接请求，此时服务器就进入了LISTEN（监听）状态；</p>
+<p>TCP客户进程也是先创建传输控制块TCB，然后向服务器发出连接请求报文</p>
+<p>TCP服务器收到请求报文后，如果同意连接，则发出确认报文。</p>
+<p>TCP客户进程收到确认后，还要向服务器给出确认。</p>
+<p>当服务器收到客户端的确认后也进入ESTABLISHED状态，此后双方就可以开始通信了。</p>
+<p>为什么TCP客户端最后还要发送一次确认呢？</p>
+<p>一句话，主要防止已经失效的连接请求报文突然又传送到了服务器，从而产生错误。</p>
+<p>如果使用的是两次握手建立连接，假设有这样一种场景，客户端发送了第一个请求连接并且没有丢失，只是因为在网络结点中滞留的时间太长了，由于TCP的客户端迟迟没有收到确认报文，以为服务器没有收到，此时重新向服务器发送这条报文，此后客户端和服务器经过两次握手完成连接，传输数据，然后关闭连接。此时此前滞留的那一次请求连接，网络通畅了到达了服务器，这个报文本该是失效的，但是，两次握手的机制将会让客户端和服务器再次建立连接，这将导致不必要的错误和资源的浪费。</p>
+<p>客户端进程发出连接释放报文，并且停止发送数据。</p>
+<p>服务器收到连接释放报文，发出确认报文，此时，服务端就进入了CLOSE-WAIT（关闭等待）状态。</p>
+<p>客户端收到服务器的确认请求后，此时，客户端就进入FIN-WAIT-2（终止等待2）状态，等待服务器发送连接释放报文（在这之前还需要接受服务器发送的最后的数据）。</p>
+<p>服务器将最后的数据发送完毕后，就向客户端发送连接释放报文，此时，服务器就进入了LAST-ACK（最后确认）状态，等待客户端的确认。</p>
+<p>客户端收到服务器的连接释放报文后，必须发出确认。此时，客户端就进入了TIME-WAIT（时间等待）状态。注意此时TCP连接还没有释放，必须经过2∗∗MSL（最长报文段寿命）的时间后，当客户端撤销相应的TCB后，才进入CLOSED状态。</p>
+<p>服务器只要收到了客户端发出的确认，立即进入CLOSED状态。</p>
+<p>为什么客户端最后还要等待2MSL？</p>
+<p>MSL（Maximum Segment Lifetime），TCP允许不同的实现可以设置不同的MSL值</p>
+<p>第一，保证客户端发送的最后一个ACK报文能够到达服务器，因为这个ACK报文可能丢失，站在服务器的角度看来，我已经发送了FIN+ACK报文请求断开了，客户端还没有给我回应，应该是我发送的请求断开报文它没有收到，于是服务器又会重新发送一次，而客户端就能在这个2MSL时间段内收到这个重传的报文，接着给出回应报文，并且会重启2MSL计时器。</p>
+<p>第二，防止类似与“三次握手”中提到了的“已经失效的连接请求报文段”出现在本连接中。客户端发送完最后一个确认报文后，在这个2MSL时间中，就可以使本连接持续的时间内所产生的所有报文段都从网络中消失。这样新的连接中不会出现旧连接的请求报文。</p>
+<p>为什么建立连接是三次握手，关闭连接确是四次挥手呢？</p>
+<p>建立连接的时候， 服务器在LISTEN状态下，收到建立连接请求的SYN报文后，把ACK和SYN放在一个报文里发送给客户端。</p>
+<p>而关闭连接时，服务器收到对方的FIN报文时，仅仅表示对方不再发送数据了但是还能接收数据，而自己也未必全部数据都发送给对方了，所以己方可以立即关闭，也可以发送一些数据给对方后，再发送FIN报文给对方来表示同意现在关闭连接，因此，己方ACK和FIN一般都会分开发送，从而导致多了一次。</p>
+<h2 id="TCP和IP区别"><a href="#TCP和IP区别" class="headerlink" title="TCP和IP区别"></a>TCP和IP区别</h2><p>IP提供基本的数据传送，而高层的TCP对这些数据包做进一步加工，如提供端口号等等。</p>
+<p>TCP：又叫传输控制协议（Transmission Control Protocal）是一种面向连接的、端对端的、可靠的、基于IP的传输层协议。</p>
+<p>IP：又叫因特网协议（Internet Protocol），IP协议位于网络层，IP协议规定了数据传输时的基本单元（数据包）和格式，IP协议还定义了数据包的递交办法和路由选择。</p>
+<h2 id="什么是微服务"><a href="#什么是微服务" class="headerlink" title="什么是微服务"></a>什么是微服务</h2><p>微服务架构是一种将单应用程序作为一套小型服务开发的方法</p>
+<p>微服务是指开发一个单个小型的但有业务功能的服务，每个服务都有自己的处理和轻量通讯机制，可以部署在单个或多个服务器上。微服务也指一种种松耦合的、有一定的有界上下文的面向服务架构。也就是说，如果每个服务都要同时修改，那么它们就不是微服务，因为它们紧耦合在一起；如果你需要掌握一个服务太多的上下文场景使用条件，那么它就是一个有上下文边界的服务，这个定义来自DDD领域驱动设计。</p>
+<p>一组小的服务</p>
+<p>服务粒度要小，而每个服务是针对一个单一职责的业务能力的封装，专注做好一件事情。</p>
+<p>独立部署运行和扩展</p>
+<p>每个服务能够独立被部署并运行在一个进程内。这种运行和部署方式能够赋予系统灵活的代码组织方式和发布节奏，使得快速交付和应对变化成为可能。</p>
+<p>独立开发和演化</p>
+<p>技术选型灵活，不受遗留系统技术约束。合适的业务问题选择合适的技术可以独立演化。服务与服务之间采取与语言无关的API进行集成。相对单体架构，微服务架构是更面向业务创新的一种架构模式。</p>
+<p>独立团队和自治</p>
+<p>团队对服务的整个生命周期负责，工作在独立的上下文中，自己决策自己治理，而不需要统一的指挥中心。团队和团队之间通过松散的社区部落进行衔接。</p>
+<p>微服务优点</p>
+<p>每个微服务都很小，这样能聚焦一个指定的业务功能或业务需求。</p>
+<p>微服务能够被小团队单独开发，这个小团队是2到5人的开发人员组成。</p>
+<p>微服务是松耦合的，是有功能意义的服务，无论是在开发阶段或部署阶段都是独立的。</p>
+<p>微服务能使用不同的语言开发。</p>
+<p>微服务允许容易且灵活的方式集成自动部署，通过持续集成工具，如Jenkins, bamboo</p>
+<p>一个团队的新成员能够更快投入生产。</p>
+<p>微服务易于被一个开发人员理解，修改和维护，这样小团队能够更关注自己的工作成果。无需通过合作才能体现价值。</p>
+<p>微服务允许你利用融合最新技术。</p>
+<p>微服务只是业务逻辑的代码，不会和HTML,CSS 或其他界面组件混合。</p>
+<p>微服务能够即时被要求扩展。</p>
+<p>微服务能部署中低端配置的服务器上。</p>
+<p>易于和第三方集成。</p>
+<p>每个微服务都有自己的存储能力，可以有自己的数据库。也可以有统一数据库。</p>
+<p>微服务架构的缺点微服务架构可能带来过多的操作。</p>
+<p>需要DevOps技巧</p>
+<p>可能双倍的努力。</p>
+<p>分布式系统可能复杂难以管理。</p>
+<p>因为分布部署跟踪问题难。</p>
+<p>当服务数量增加，管理复杂性增加。</p>
+<h2 id="什么是DevOps"><a href="#什么是DevOps" class="headerlink" title="什么是DevOps"></a>什么是DevOps</h2>
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/post/9268dc38.html" rel="next" title="树莓派增大SWAP空间">
+                <i class="fa fa-chevron-left"></i> 树莓派增大SWAP空间
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/post/761d32fd.html" rel="prev" title="Windows建立文件夹的硬链接">
+                Windows建立文件夹的硬链接 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Kaibo Cao</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">12</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">12</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/CaoKaibo" title="GitHub &rarr; https://github.com/CaoKaibo" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:imkbcao@gmail.com" title="E-Mail &rarr; mailto:imkbcao@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#考研中文面试专业问题"><span class="nav-number">1.</span> <span class="nav-text">考研中文面试专业问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#堆与栈区别"><span class="nav-number">1.1.</span> <span class="nav-text">堆与栈区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JAVA虚拟机"><span class="nav-number">1.2.</span> <span class="nav-text">JAVA虚拟机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么B-树比B树更适合做系统的数据库索引和文件索引"><span class="nav-number">1.3.</span> <span class="nav-text">为什么B+树比B树更适合做系统的数据库索引和文件索引</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#B树的作用"><span class="nav-number">1.4.</span> <span class="nav-text">B树的作用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#B树和B-树区别"><span class="nav-number">1.5.</span> <span class="nav-text">B树和B+树区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#异常的作用"><span class="nav-number">1.6.</span> <span class="nav-text">异常的作用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OSI-TCP-IP"><span class="nav-number">1.7.</span> <span class="nav-text">OSI/TCP/IP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是静态链表"><span class="nav-number">1.8.</span> <span class="nav-text">什么是静态链表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件系统实现"><span class="nav-number">1.9.</span> <span class="nav-text">文件系统实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#静态与动态区别"><span class="nav-number">1.10.</span> <span class="nav-text">静态与动态区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#强类型和弱类型的区别"><span class="nav-number">1.11.</span> <span class="nav-text">强类型和弱类型的区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多态"><span class="nav-number">1.12.</span> <span class="nav-text">多态</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#异常和错误区别"><span class="nav-number">1.13.</span> <span class="nav-text">异常和错误区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#软件工程定义"><span class="nav-number">1.14.</span> <span class="nav-text">软件工程定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#软件的生命周期"><span class="nav-number">1.15.</span> <span class="nav-text">软件的生命周期</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#谈谈对软件工程的理解"><span class="nav-number">1.16.</span> <span class="nav-text">谈谈对软件工程的理解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TCP三次握手、四次挥手"><span class="nav-number">1.17.</span> <span class="nav-text">TCP三次握手、四次挥手</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TCP和IP区别"><span class="nav-number">1.18.</span> <span class="nav-text">TCP和IP区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是微服务"><span class="nav-number">1.19.</span> <span class="nav-text">什么是微服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是DevOps"><span class="nav-number">1.20.</span> <span class="nav-text">什么是DevOps</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Kaibo Cao</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+  
+  <script color="0,100,255" opacity="0.3" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest-nomobile.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=7.0.1"></script>
+
+  <script src="/js/src/motion.js?v=7.0.1"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=7.0.1"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=7.0.1"></script>
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="/js/src/post-details.js?v=7.0.1"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=7.0.1"></script>
+
+
+  
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      
+        background-color: #eee;
+        background-image: linear-gradient(#fcfcfc, #eee);
+        border: 1px solid #d5d5d5;
+        border-radius: 3px;
+      
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      
+        right: 4px;
+        top: 8px;
+      
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1;
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function(i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap');
+      $(e).after($wrap);
+      $wrap.append($('<button>').addClass('copy-btn').append('Copy').on('click', function(e) {
+        var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+          return $(e).text();
+        }).toArray().join('\n');
+        var ta = document.createElement('textarea');
+        var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+        ta.style.top = yPosition + 'px'; // Prevent page scroll
+        ta.style.position = 'absolute';
+        ta.style.opacity = '0';
+        ta.readOnly = true;
+        ta.value = code;
+        document.body.appendChild(ta);
+        ta.select();
+        ta.setSelectionRange(0, code.length);
+        ta.readOnly = false;
+        var result = document.execCommand('copy');
+        
+          if (result) $(this).text('Copied');
+          else $(this).text('Copy failed');
+        
+        ta.blur(); // For iOS
+        $(this).blur();
+      })).on('mouseleave', function(e) {
+        var $b = $(this).find('.copy-btn');
+        setTimeout(function() {
+          $b.text('Copy');
+        }, 300);
+      }).append(e);
+    })
+  </script>
+
+
+</body>
+</html>
