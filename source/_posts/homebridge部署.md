@@ -95,9 +95,9 @@ vi config.json
 {
     "bridge": {
         "name": "YeeBridge",
-        "username": "B8:27:EB:CC:BF:AC",
+        "username": "your_mac_address",
         "port": 51825,
-        "pin": "031-45-154"
+        "pin": "XXX-XX-XXX自己设置X用0-9数字代替"
     },
 
     "platforms": [
