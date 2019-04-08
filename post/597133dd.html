@@ -107,7 +107,7 @@
 <meta property="og:description" content="2019考研南大软件学院经验分享长文预警：全文共 9860 字，阅读需要 好多 分钟 文中方法仅针对我自己，请根据自己情况灵活调整 本文会不断更新，请勿拷贝内容，文章链接为永久地址 如果你对文中内容有疑问，联系我 如果你感觉本文很赞，请我喝咖啡 分数   政治 英语 数学 专业课 初试总分 复试总分 总分     69 80 107 128 384 266 650    排名   初试排名 复试排">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://kaibo.me/post/597133dd/1.jpg">
-<meta property="og:updated_time" content="2019-04-08T11:18:53.215Z">
+<meta property="og:updated_time" content="2019-04-08T11:46:30.860Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2019考研南大软件学院经验分享">
 <meta name="twitter:description" content="2019考研南大软件学院经验分享长文预警：全文共 9860 字，阅读需要 好多 分钟 文中方法仅针对我自己，请根据自己情况灵活调整 本文会不断更新，请勿拷贝内容，文章链接为永久地址 如果你对文中内容有疑问，联系我 如果你感觉本文很赞，请我喝咖啡 分数   政治 英语 数学 专业课 初试总分 复试总分 总分     69 80 107 128 384 266 650    排名   初试排名 复试排">
@@ -387,7 +387,7 @@
                 
               
 
-              <time title="Created: 2019-04-08 18:38:27 / Modified: 19:18:53" itemprop="dateCreated datePublished" datetime="2019-04-08T18:38:27+08:00">2019-04-08</time>
+              <time title="Created: 2019-04-08 18:38:27 / Modified: 19:46:30" itemprop="dateCreated datePublished" datetime="2019-04-08T18:38:27+08:00">2019-04-08</time>
             
 
             
@@ -596,7 +596,7 @@
 <p>若干个颜色相同的球连在一起就可以消掉，优先消除连在一起长的，如果长度一样优先消除排在前面的，直到没有连续两个一样颜色的球连在一起为止。要求输出消掉的球的个数和序号，注意，消掉以后后面的球的序号并不会往前移。</p>
 <p>上面的例子输出（坐标从0开始）</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">4 4 5 6 7</span><br><span class="line">4 1 2 3 8</span><br><span class="line">4 9 10 11 12</span><br></pre></td></tr></table></figure>
-<p>没啥算法好讲的感觉，我直接无脑用PriorityQueue反复扫，消掉了以后用X代替，从队列中拿连续的最长的，又靠前的，然后输出。</p>
+<p>没想出啥好的算法，直接无脑扫，把当前连续若干个球作为最长的，如果后面出现比他短的或者一样长的，就不管，消掉了以后用X代替，如此循环。</p>
 <p>可以多次提交，取最后一次成绩，提交后系统判题，我花了两个小时做完，一共30个测试用例全过。其实开局啥也不写直接提交也能过2个。大概300人参加复试，30个满分。难度很低，写过Java的应该问题都不大，1个小时多一点就有人提交走了。</p>
 <p>然后说一下我的上机的备考流程，因为我之前写算法一直用cpp，夏令营之后我晓得南软这个上机就是写系统的，cpp写起来麻烦，然后就把Java的基础类的用法都整理了下，String, Deque, Collection, Map, Set, List, Math, PriorityQueue, BigDecimal 这些，这些类的静态方法与成员方法心里有了个数，然后把常用算法：几种背包、线段树、贪心、动规再熟悉了一下，就上考场了。</p>
 <h3 id="专业面试"><a href="#专业面试" class="headerlink" title="专业面试"></a>专业面试</h3><p>今年专业面试没有自我介绍，直接提问。</p>
