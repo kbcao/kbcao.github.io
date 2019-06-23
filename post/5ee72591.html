@@ -99,24 +99,24 @@
 
 
 
-  <meta name="description" content="Ubuntu-Apache发布网站 把网站文件夹 Project 放到 /var/www/ 下 sudo chmod 777 /var/www/Project 进入 /etc/apache2/sites-available sudo cp 000-default.conf Project.conf sudo vi Project.conf 修改 VirtualHost 为自定义的端口（例如88）将">
+  <meta name="description" content="Anaconda环境管理创建环境conda create -n py35 python=3.5 进入环境Linux: source activate py35Windows：activate py35 退出环境Linux: source deactivateWindows：deactivate 列出环境conda env list 移除conda remove -n py35 –all 搜索包co">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Ubuntu-Apache发布网站">
-<meta property="og:url" content="https://kaibo.me/post/8f042342.html">
+<meta property="og:title" content="Anaconda环境管理">
+<meta property="og:url" content="https://kaibo.me/post/5ee72591.html">
 <meta property="og:site_name" content="LonelyPointer">
-<meta property="og:description" content="Ubuntu-Apache发布网站 把网站文件夹 Project 放到 /var/www/ 下 sudo chmod 777 /var/www/Project 进入 /etc/apache2/sites-available sudo cp 000-default.conf Project.conf sudo vi Project.conf 修改 VirtualHost 为自定义的端口（例如88）将">
+<meta property="og:description" content="Anaconda环境管理创建环境conda create -n py35 python=3.5 进入环境Linux: source activate py35Windows：activate py35 退出环境Linux: source deactivateWindows：deactivate 列出环境conda env list 移除conda remove -n py35 –all 搜索包co">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-04-04T03:46:13.013Z">
+<meta property="og:updated_time" content="2019-06-23T07:57:04.808Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ubuntu-Apache发布网站">
-<meta name="twitter:description" content="Ubuntu-Apache发布网站 把网站文件夹 Project 放到 /var/www/ 下 sudo chmod 777 /var/www/Project 进入 /etc/apache2/sites-available sudo cp 000-default.conf Project.conf sudo vi Project.conf 修改 VirtualHost 为自定义的端口（例如88）将">
+<meta name="twitter:title" content="Anaconda环境管理">
+<meta name="twitter:description" content="Anaconda环境管理创建环境conda create -n py35 python=3.5 进入环境Linux: source activate py35Windows：activate py35 退出环境Linux: source deactivateWindows：deactivate 列出环境conda env list 移除conda remove -n py35 –all 搜索包co">
 
 
 
 
 
 
-  <link rel="canonical" href="https://kaibo.me/post/8f042342.html">
+  <link rel="canonical" href="https://kaibo.me/post/5ee72591.html">
 
 
 
@@ -126,7 +126,7 @@
   };
 </script>
 
-  <title>Ubuntu-Apache发布网站 | LonelyPointer</title>
+  <title>Anaconda环境管理 | LonelyPointer</title>
   
 
 
@@ -342,7 +342,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://kaibo.me/post/8f042342.html">
+    <link itemprop="mainEntityOfPage" href="https://kaibo.me/post/5ee72591.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Kaibo Cao">
@@ -359,7 +359,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Ubuntu-Apache发布网站
+          <h1 class="post-title" itemprop="name headline">Anaconda环境管理
 
               
             
@@ -385,7 +385,7 @@
                 
               
 
-              <time title="Created: 2019-04-04 11:24:27 / Modified: 11:46:13" itemprop="dateCreated datePublished" datetime="2019-04-04T11:24:27+08:00">2019-04-04</time>
+              <time title="Created: 2019-06-23 15:55:05 / Modified: 15:57:04" itemprop="dateCreated datePublished" datetime="2019-06-23T15:55:05+08:00">2019-06-23</time>
             
 
             
@@ -407,14 +407,14 @@
                 <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/server/" itemprop="url" rel="index"><span itemprop="name">server</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ml/" itemprop="url" rel="index"><span itemprop="name">ml</span></a></span>
 
                 
                 
                   , 
                 
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/server/website/" itemprop="url" rel="index"><span itemprop="name">website</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ml/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a></span>
 
                 
                 
@@ -443,7 +443,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">623</span>
+                <span title="Symbols count in article">367</span>
               
 
               
@@ -477,23 +477,16 @@
       
 
       
-        <h1 id="Ubuntu-Apache发布网站"><a href="#Ubuntu-Apache发布网站" class="headerlink" title="Ubuntu-Apache发布网站"></a>Ubuntu-Apache发布网站</h1><ol>
-<li>把网站文件夹 Project 放到 /var/www/ 下</li>
-<li><code>sudo chmod 777 /var/www/Project</code></li>
-<li>进入 <code>/etc/apache2/sites-available</code></li>
-<li><code>sudo cp 000-default.conf Project.conf</code></li>
-<li><code>sudo vi Project.conf</code> 修改 VirtualHost 为自定义的端口（例如88）将 DocumentRoot 改成<code>/var/www/Project</code></li>
-<li><p><code>sudo vi /etc/apache2/apache2.conf</code>在中间部分增加</p>
- <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;Directory /var/www/Project/&gt;</span><br><span class="line">        Options Indexes FollowSymLinks</span><br><span class="line">        AllowOverride None</span><br><span class="line">        Require all granted</span><br><span class="line">&lt;/Directory&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>进入 <code>/etc/apache2/sites-enabled</code></p>
-</li>
-<li><code>sudo ln -s ../sites-available/Project.conf Project.conf</code> 建立软连接</li>
-<li>进入<code>/etc/apache2/</code></li>
-<li><code>sudo vi ports.conf</code> 增加 Listen +自定义端口号（例如88）</li>
-<li><code>sudo service apache2 restart</code></li>
-<li><code>http://ip:port</code></li>
-</ol>
+        <h1 id="Anaconda环境管理"><a href="#Anaconda环境管理" class="headerlink" title="Anaconda环境管理"></a>Anaconda环境管理</h1><p>创建环境<br>conda create -n py35 python=3.5</p>
+<p>进入环境<br>Linux: source activate py35<br>Windows：activate py35</p>
+<p>退出环境<br>Linux: source deactivate<br>Windows：deactivate</p>
+<p>列出环境<br>conda env list</p>
+<p>移除<br>conda remove -n py35 –all</p>
+<p>搜索包<br>conda search mxnet*</p>
+<p>指定环境，安装指定版本的包<br>conda install -n py35 mxnet==1.0.0</p>
+<p>指定环境，更新包<br>conda update -n py35 mxnet</p>
+<p>指定环境，查看已安装的包<br>conda list -n py35</p>
+<p>指定环境，删除包<br>conda remove -n py35 mxnet</p>
 
       
     </div>
@@ -528,7 +521,7 @@
   <li class="post-copyright-link">
     <strong>Post link: </strong>
     
-    <a href="https://kaibo.me/post/8f042342.html" title="Ubuntu-Apache发布网站">https://kaibo.me/post/8f042342.html</a>
+    <a href="https://kaibo.me/post/5ee72591.html" title="Anaconda环境管理">https://kaibo.me/post/5ee72591.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-ND</a> unless stating additionally.</li>
@@ -548,8 +541,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/post/468c0eb9.html" rel="next" title="TimeMachine恢复失败解决方案">
-                <i class="fa fa-chevron-left"></i> TimeMachine恢复失败解决方案
+              <a href="/post/597133dd.html" rel="next" title="2019考研南大软件学院经验分享">
+                <i class="fa fa-chevron-left"></i> 2019考研南大软件学院经验分享
               </a>
             
           </div>
@@ -557,10 +550,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/post/190e184a.html" rel="prev" title="Windows无法弹出WiFi认证界面">
-                Windows无法弹出WiFi认证界面 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -743,7 +732,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Ubuntu-Apache发布网站"><span class="nav-number">1.</span> <span class="nav-text">Ubuntu-Apache发布网站</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Anaconda环境管理"><span class="nav-number">1.</span> <span class="nav-text">Anaconda环境管理</span></a></li></ol></div>
             
 
           </div>
