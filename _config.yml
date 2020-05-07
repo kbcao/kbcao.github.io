@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://caokaibo.github.io
+url: https://kbcao.github.io
 root: /
 permalink: post/:abbrlink.html
 permalink_defaults:
@@ -89,7 +89,7 @@ symbols_count_time:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:CaoKaibo/caokaibo.github.io.git
+  repo: git@github.com:kbcao/kbcao.github.io.git
   branch: master
 
 
